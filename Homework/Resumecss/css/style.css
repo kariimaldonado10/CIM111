@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css?family=Handlee|Tangerine');
+
+
+
+
+body{
+    background-color: pink;
+
+    font-family: 'Handlee', cursive;
+
+
+}
+
+#name{
+    color: white;
+    background-color: grey;
+
+
+    font-family: 'Tangerine', cursive;
+}
+
+a{
+  text-decoration: none;
+  color:blue;
+  font-weight: 900;
+}
+
+a:hover{
+color:white;
+text-decoration; orange
+}
+
+
+#box{
+  color: white;
+  background-color: grey;
+
+  width: 180px;
+  height: 80px;
+  padding: 10px;
+
+
+}
+
+#box{
+  color: red;
+  background-color: white;
+
+  width:180px;
+  height: 25px;
+  padding: 10px;
+}
+
+#colorchange{
+  color: red;
+
+}
+
+#colorchange{
+  color: red;
+
+}
+
+.info{
+
+  background-color: rgb(230,230,250);
+
+}
+
+.bottle{
+
+      background-color: red;
+
+
+
+
+}
+
+
+.two{
+
+  list-style: circle;
+
+
+
+
+}
+/* {
+a: visited{
+  color: pink;
+} */
