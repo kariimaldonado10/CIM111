@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title> 5 Steps To Do, In Order To Make The Perfect Brew</title>
+
+
+
+
+    <style>
+      .box{
+        width: 500px;
+        height: 50px;
+        background-color: red;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1 id="textChange">5 Steps To Do, In Order To Make The Perfect Brew</h1>
+
+    <img align=left>
+  <img src="images/c2.jpg"height="300" alt="c2" class="left">
+  <img src="images/c8.jpg"height="300" alt="c8" class="left">
+  <img src="images/c3.jpg"height="300" alt="c3" class="left">
+
+
+    <h2 id="info">Mouse over to see 5 steps!</h2>
+<h2 id="info">Step #1</h2>
+    <div id="recepticle"></div>
+
+
+
+    <h2 id="info">Step #2</h2>
+    <div id="recepticle1"></div>
+    <h2 id="info">Step #3</h2>
+    <div id="recepticle2"></div>
+    <h2 id="info">Step #4</h2>
+    <div id="recepticle3"></div>
+    <h2 id="info">Step #5</h2>
+    <div id="recepticle4"></div>
+
+    <h2>Click To View More Images</h2>
+    <img id="image1" src="https://farm7.staticflickr.com/2353/2238571207_bb58b4fdfc_o.jpg" width="100">
+    <img id="image2" src="https://farm4.staticflickr.com/7004/6632552129_053767710e_o.jpg" width="100">
+    <div id="imageRecepticle"></div>
+
+    <ul>
+      <li id="Show">Click To See Fun Fact</li>
+      <li id="hide">Hide Fun Fact</li>
+      <li id="toggle">Toggle</li>
+    </ul>
+
+    <div id="funfact">
+        Coffee is the second most traded commodity on earth.
+
+
+
+
+    </div>
+
+    <div class="box"></div>
+
+    <div class="box"></div>
+
+    <div class="box"></div>
+
+
+
+    <!-- Local jquery script -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <!-- Remote version -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script>
+      $(document).ready(function(){
+        //All jquery code should be placed below
+        $(".box").hide();
+        $("#funfact").hide();
+        $("body").css("background-color", "brown");
+        $("h1").css("color", "Black");
+        $("h1").css("font-size", "45px");
+        $("#textChange").css("background-color", "orange");
+        $("#textChange").html("5 Steps To Do, In Order To Make The Perfect Brew ");
+        $("#textChange").click(function(){
+          $("body").css("background-color", "orange");
+        });//End of textChange click
+
+
+        $("#info").mouseenter(function(){
+          $("#recepticle").html("<em>Step 1: Use the proper water to coffee ratio by measuring out 16 parts water to 1 part coffee by weight. Its all about the ratio. </em>");
+
+
+
+          $("#recepticle1").html("<em>Step 2: Brew with ideal water temperature which should vary between 195-205 degrees fahrenheit. This step will effect taste. </em>");
+          $("#recepticle2").html("<em>Step 3: Use the correct grind for brewing methods, meaning the coarse of the grind determines your batch of coffee, from espressos to regular brew.</em>");
+          $("#recepticle3").html("<em>Step 4: Brew the coffee with the correct amount of time per method. Starting with the initial drop of water on the beans. An average brew time is 4-5 min. </em>");
+          $("#recepticle4").html("<em>Step 5: Choose the best coffee beans raning in brands, from different roasts, and also from different countries. </em>");
+
+
+
+
+          $("#info").css("background-color", "white");
+
+        });
+        $("#info").mouseleave(function(){
+          $("#recepticle").html("");
+          $("#recepticle1").html("");
+          $("#recepticle2").html("");
+          $("#recepticle3").html("");
+          $("#recepticle4").html("");
+          $("#info").css("background-color", "transparent");
+        });
+        $("#image1").click(function(){
+          $("#imageRecepticle").html('<img src="https://farm7.staticflickr.com/2353/2238571207_bb58b4fdfc_o.jpg" width="300">');
+        });
+        $("#image2").click(function(){
+          $("#imageRecepticle").html('<img src="https://farm4.staticflickr.com/7004/6632552129_053767710e_o.jpg" width="300">');
+        });
+        $("#hide").click(function(){
+          $("#funfact").hide();
+        });
+        $("#Show").click(function(){
+          $("#funfact").show();
+        });
+        $("#toggle").click(function(){
+          $("#funfact").toggle(1000);
+        });
+      });// End of document ready
+
+
+
+
+
+    </script>
+
+    <img align=center>
+    <img src="images/1.jpg"height="300" alt="1" class="left">
+    <img src="images/c4.jpg"height="300" alt="c4" class="center">
+    <img src="images/c5.jpg"height="300" alt="c5" class="right">
+
+
+
+
+
+  </body>
+
+
+</html>

@@ -1,0 +1,47 @@
+
+<!Doctype html>
+
+<html>
+
+<head>
+<title><jquery plugins</title>
+<style>
+  .char1{
+  color: red;
+
+  }
+
+  .char2{
+    color: blue;
+
+  }
+
+  .char3{
+    color: green;
+
+  }
+
+  .char4{
+    color: pink;
+  }
+
+
+
+</head>
+<body>
+  <h1>Hello</h1>
+  <p id="words">We are breaking up words</p>
+
+
+  <script
+   src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min
+   .js"></script>
+
+   <script src="js/jquery.lettering.js"></script>
+   <script>
+   $(document).ready (function(){
+    $("#letters").lettering();
+    $("#words").lettering("words");
+
+   });
+   </script>
