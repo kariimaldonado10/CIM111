@@ -13,6 +13,20 @@
         height: 50px;
         background-color: red;
       }
+
+
+
+      .font{
+          font-size: 20px;
+          color: white;
+          text-align: center;
+          margin-left: 0 auto;
+          margin-right: 0 auto;
+
+
+
+
+      }
     </style>
   </head>
 
@@ -46,13 +60,19 @@
     <div id="imageRecepticle"></div>
 
     <ul>
-      <li id="Show">Click To See Fun Fact</li>
+      <li id="show">Click To See Fun Fact</li>
       <li id="hide">Hide Fun Fact</li>
-      <li id="toggle">Toggle</li>
+      <li id="toggle">Toggle Fun Fact</li>
+      <li id="show1">Click To See A Quick Tip</li>
     </ul>
 
-    <div id="funfact">
-        Coffee is the second most traded commodity on earth.
+    <div id="funfact" class="font">
+        Coffee is the second most traded commodity on earth.</div>
+
+
+  <div id="funfact2" class="font">
+    To make sure your coffee maker gets hot enough, run it without any coffee in the hopper and use a thermometer to measure the temperature. If you can, try to measure the temperature during the brewing process, as the water temperature will drop as it passes through the hopper and into the carafe beneath.
+
 
 
 
@@ -77,6 +97,7 @@
         //All jquery code should be placed below
         $(".box").hide();
         $("#funfact").hide();
+        $("#funfact2").hide();
         $("body").css("background-color", "brown");
         $("h1").css("color", "Black");
         $("h1").css("font-size", "45px");
@@ -112,17 +133,41 @@
           $("#info").css("background-color", "transparent");
         });
         $("#image1").click(function(){
-          $("#imageRecepticle").html('<img src="https://farm7.staticflickr.com/2353/2238571207_bb58b4fdfc_o.jpg" width="300">');
+          $("#imageRecepticle").html('<img src="https://c6.staticflickr.com/1/35/71787480_2a2ea422e0_o.jpg" width="300">');
         });
         $("#image2").click(function(){
-          $("#imageRecepticle").html('<img src="https://farm4.staticflickr.com/7004/6632552129_053767710e_o.jpg" width="300">');
+          $("#imageRecepticle").html('<img src="https://c8.staticflickr.com/8/7646/16728125316_1e668a00ab_o.jpg" width="300">');
         });
+
+
+        $("#show1").click(function(){
+          $("#funfact2").hide();
+
+
+        });
+        $("#show1").click(function(){
+          $("#funfact2").show();
+
+
+        });
+
+
+
+
+
+
+
         $("#hide").click(function(){
           $("#funfact").hide();
+
+
         });
-        $("#Show").click(function(){
+        $("#show").click(function(){
           $("#funfact").show();
+
+
         });
+
         $("#toggle").click(function(){
           $("#funfact").toggle(1000);
         });
@@ -134,7 +179,7 @@
 
     </script>
 
-    <img align=center>
+
     <img src="images/1.jpg"height="300" alt="1" class="left">
     <img src="images/c4.jpg"height="300" alt="c4" class="center">
     <img src="images/c5.jpg"height="300" alt="c5" class="right">
